@@ -1,7 +1,5 @@
 // Written by Dylan Neve.
 
-import java.util.Arrays;
-
 public class BubbleSort {
 	
 	// Variables needed for algorithm.
@@ -31,10 +29,7 @@ public class BubbleSort {
 			nextNum = numbers[i+1];
 			
 			// If arrangement has been changed print step and +1 to step value.
-			if(swapped) {
-				System.out.println("\nStep : " + step);
-				System.out.println(Arrays.toString(numbers));
-			}
+			OutputHandler.printerToConsole(swapped, step, numbers);
 			
 			// Check whether current or next value is bigger.
 			if(currentNum > nextNum) {
